@@ -5,7 +5,7 @@ interface IUserProps {
   avatarUrl: string;
 }
 
-interface IAuthContextProps {
+export interface IAuthContextProps {
   user: IUserProps;
   signIn: () => Promise<void>;
 }
