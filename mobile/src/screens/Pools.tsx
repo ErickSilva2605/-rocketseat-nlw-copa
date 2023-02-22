@@ -59,6 +59,7 @@ export function Pools() {
             renderItem={({ item }) => (
               <PoolCard
                 data={item}
+                onPress={() => navigate('details', { id: item.id })}
               />
             )}
             ListEmptyComponent={<EmptyPoolList />}

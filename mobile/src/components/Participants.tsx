@@ -17,7 +17,7 @@ export function Participants({ participants, count }: Props) {
   return (
     <HStack>
       {
-        participants && participants.slice(0, 4).map((participant) => (
+        participants && participants.map((participant) => (
           <Avatar
             key={participant.id}
             source={{ uri: participant.user.avatarUrl }}
