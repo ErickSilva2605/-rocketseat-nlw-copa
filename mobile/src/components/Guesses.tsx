@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Share } from 'react-native';
 import { FlatList, useToast } from 'native-base';
 
 import { api } from '../services/api';
@@ -78,12 +77,6 @@ export function Guesses({ poolId, code }: Props) {
     }
   }
 
-  async function handleCodeShare() {
-    await Share.share({
-      message: code
-    });
-  }
-
   useEffect(() => {
     fetchGames();
   }, [poolId]);
@@ -105,7 +98,7 @@ export function Guesses({ poolId, code }: Props) {
         />
       )}
       _contentContainerStyle={{ pb: 10 }}
-      ListEmptyComponent={() => <EmptyMyPoolList code={code} onShare={handleCodeShare} />}
+      ListEmptyComponent={() => <EmptyMyPoolList code={code} />}
     />
   );
 }
