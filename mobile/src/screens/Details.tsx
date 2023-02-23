@@ -12,6 +12,7 @@ import { PoolHeader } from '../components/PoolHeader';
 import { EmptyMyPoolList } from '../components/EmptyMyPoolList';
 import { Option } from '../components/Option';
 import { Guesses } from '../components/Guesses';
+import { Raking } from '../components/Raking';
 
 interface RoutePrams {
   id: string;
@@ -86,8 +87,12 @@ export function Details() {
                 onPress={() => setOptionSelected('ranking')}
               />
             </HStack>
-
-            <Guesses poolId={poolDetails.id} code={poolDetails.code} />
+            {
+              optionSelected === 'guesses' ?
+                <Guesses poolId={poolDetails.id} code={poolDetails.code} />
+                :
+                <Raking />
+            }
           </VStack>
 
           : <EmptyMyPoolList code={poolDetails.code} />
