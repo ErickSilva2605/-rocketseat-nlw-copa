@@ -17,7 +17,7 @@
    <a href="https://github.com/ErickSilva2605/rocketseat-nlw-copa/pulls">
       <img alt="Github Pull Requests" src="https://img.shields.io/github/issues-pr/ErickSilva2605/rocketseat-nlw-copa?label=PRs&color=F7DD43&labelColor=202024">
    </a>
-      <a href="https://github.com/ErickSilva2605/rocketseat-nlw-copa/blob/main/LICENSE.md">
+      <a href="https://github.com/ErickSilva2605/rocketseat-nlw-copa/blob/main/LICENSE">
       <img alt="License" src="https://img.shields.io/static/v1?label=License&message=MIT&color=F7DD43&labelColor=202024"/>
    </a>
 </div>
